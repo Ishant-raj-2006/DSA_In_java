@@ -8,7 +8,7 @@ public class Q17 {
         int num, count= 0,sum=0; 
         System.out.print("Enter Number = ");
         num = sb.nextInt();
-        int copy = num,rev=0;
+        int copy = num;
         while (num !=0) {
             count=num%10;
             sum +=count;
