@@ -21,6 +21,3 @@ public class Q14 {
         System.out.println();
     }
 }
-
-
-// 01:59  
