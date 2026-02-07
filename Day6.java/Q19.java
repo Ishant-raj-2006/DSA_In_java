@@ -20,5 +20,3 @@ public class Q19 {
           System.out.println("Secod max Number is = "+smax);
     }
 }
-
-//// 3:03
