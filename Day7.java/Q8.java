@@ -1,6 +1,6 @@
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+// import java.lang.reflect.Array;
+// import java.util.ArrayList;
 
 // // Give two integer arr A and B return the list of element common of common to both the list and return the list in sorted order
 // public class Q8 {
@@ -36,28 +36,30 @@ import java.util.ArrayList;
 //     }
 // }
 
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Q8 {
     public static void main(String[] args) {
         ArrayList<Integer> ans = new ArrayList<>();
-int[] arr1 ={1,2,4,4,3,2243,43224,2142,34457867,8768687,5876,867,8};
-int[] arr2 ={909,0,80,80,8,8,9,80,8,88,9,80,80,7,86,7,8,4,3};
-int i=0,j=0;
-Arrays.sort(arr1);
-Arrays.sort(arr2);
+        int[] arr1 = {1, 2, 4, 4, 3, 2243, 43224, 2142, 34457867, 8768687, 5876, 867, 8};
+        int[] arr2 = {909, 0, 80, 80, 8, 8, 9, 80, 8, 88, 9, 80, 80, 7, 86, 7, 8, 4, 3};
+        int i = 0, j = 0;
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
 
-// i=arr1.length;
-// j=arr2.length;
-while (i<arr1.length && j<arr2.length) { 
-    if(arr1[i]==arr2[j]){
-        ans.add(arr1[i]);
-        i++;
-        j++;
-    }
-    else if(arr1[i] < arr2[j]) i++;
-    else j++;
-}
-return ans;
+        while (i < arr1.length && j < arr2.length) {
+            if (arr1[i] == arr2[j]) {
+                ans.add(arr1[i]);
+                i++;
+                j++;
+            } else if (arr1[i] < arr2[j]) {
+                i++;
+            } else {
+                j++;
+            }
+        }
 
+        System.out.println(ans);
     }
 }
