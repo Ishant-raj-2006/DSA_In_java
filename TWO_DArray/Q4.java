@@ -2,14 +2,14 @@
 
 import java.util.Scanner;
 
-public class Q3{
+public class Q4{
     public static void main(String[] args) {
         Scanner sb = new Scanner(System.in);
         int row ;
-        int col;
-        System.out.print("Enter The value of Rows ");
+        int col,sum=0;
+        System.out.print("Enter The value of Rows =");
         row = sb.nextInt();
-        System.out.print("Enter The value of Columns ");
+        System.out.print("Enter The value of Columns =");
         col = sb.nextInt();
         int [][] arr = new int[row][col];
         for(int i=0; i<row; i++){
@@ -20,10 +20,15 @@ public class Q3{
         }
         for(int i=0; i<row; i++){
             for(int j=0; j<col; j++){
+                sum +=arr[i][j];
                 System.out.print(arr[i][j]+" ");
             }
         System.out.println();
             
         }
+        System.out.println("The sum of all Elements = "+sum);
     }
 }
+
+
+// 26:56
